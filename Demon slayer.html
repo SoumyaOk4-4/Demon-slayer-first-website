@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+            color: #f1f1f1;
+        }
+
+        header {
+            background: url("DS_Still_21.avif") no-repeat center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            position: relative;
+            font-size: 3.5rem;
+            font-family: 'Montserrat', sans-serif;
+            z-index: 1;
+            text-shadow: 0 0 15px #ff4b4b;
+        }
+
+        main {
+            padding: 40px 10%;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ff4b4b;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 6px 30px rgba(255, 75, 75, 0.5);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0;
+            color: #ff4b4b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About the Series</h2>
+            <p>
+                <strong>Demon Slayer (Kimetsu no Yaiba)</strong> is a globally beloved Japanese manga and anime series.
+                It follows <b>Tanjiro Kamado</b>, a kind-hearted boy who becomes a demon slayer after his family is
+                slaughtered and his sister, <b>Nezuko</b>, is transformed into a demon. Determined to cure her and
+                avenge his family, Tanjiro joins the Demon Slayer Corps to protect humanity and defeat the terrifying
+                demons led by <b>Muzan Kibutsuji</b>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Why It's Popular</h2>
+            <p>
+                Demon Slayer is praised for its breathtaking animation, emotional storytelling, and intense fight
+                scenes.
+                Its combination of friendship, determination, and stunning visuals has made it a cultural phenomenon
+                worldwide. It has expanded into movies, video games, and merchandise, with <i>Mugen Train</i> becoming
+                one of the highest-grossing anime films ever.
+            </p>
+        </section>
+
+        <section>
+            <h2>Main Characters</h2>
+            <div class="character-grid">
+                <!-- Tanjiro -->
+                <div class="card">
+                    <img src="Tanjiro.avif" alt="Tanjiro Kamado">
+                    <div class="card-content">
+                        <h3>Tanjiro Kamado</h3>
+                        <p>
+                            The eldest Kamado child. After losing his family, he becomes a Demon Slayer to protect his
+                            sister and others. Skilled in Water Breathing and Hinokami Kagura, wielding a black Nichirin
+                            blade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Nezuko -->
+                <div class="card">
+                    <img src="Nezuko.png" alt="Nezuko Kamado">
+                    <div class="card-content">
+                        <h3>Nezuko Kamado</h3>
+                        <p>
+                            Tanjiro’s younger sister, turned into a demon yet retaining her humanity. She fights using
+                            her unique Blood Demon Art, <i>Exploding Blood</i>, and later becomes immune to sunlight.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zenitsu -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Zenitsu Agatsuma">
+                    <div class="card-content">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>
+                            A cowardly yet powerful Demon Slayer who masters the first form of Thunder Breathing. His
+                            lightning-fast strikes are unleashed when unconscious, showing his hidden strength.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Inosuke -->
+                <div class="card">
+                    <img src="inosuke.jpg" alt="Inosuke Hashibira">
+                    <div class="card-content">
+                        <h3>Inosuke Hashibira</h3>
+                        <p>
+                            A wild fighter raised by boars. He wields dual serrated Nichirin swords and invented Beast
+                            Breathing. Though rough, he’s loyal to Tanjiro and his companions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kanao -->
+                <div class="card">
+                    <img src="Kanao Tsuyuri.avif" alt="Kanao Tsuyuri">
+                    <div class="card-content">
+                        <h3>Kanao Tsuyuri</h3>
+                        <p>
+                            Kanao Tsuyuri (栗花落 カナヲ, Tsuyuri Kanao) is a Demon Slayer and the adopted sister of Shinobu
+                            Kocho. Trained as a tsuguko, she is a practitioner of the Flower Breathing (花の呼吸, Hana no
+                            kokyū) style and wields a light pink Nichirin sword. She possesses enhanced eyesight,
+                            granting her exceptional analytical abilities in combat. Due to a traumatic childhood, she
+                            initially exhibits profound emotional detachment, relying on a coin flip to make decisions.
+                            She overcomes this through her interactions with Tanjiro Kamado, learning to act on her own
+                            will. She plays a pivotal role in defeating the Upper Rank demon Doma, who killed her
+                            adoptive sisters. After the disbandment of the Demon Slayer Corps, she becomes a doctor and
+                            eventually marries Tanjiro.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Genya -->
+                <div class="card">
+                    <img src="Genya Shinazugawa.jpg" alt="Genya Shinazugawa">
+                    <div class="card-content">
+                        <h3>Genya Shinazugawa</h3>
+                        <p>
+                            Genya Shinazugawa (不死川 玄弥, Shinazugawa Gen'ya) is a Demon Slayer who cannot use Breathing
+                            Techniques. Instead, he possesses a unique ability to temporarily gain a demon's powers by
+                            consuming its flesh. He fights using a shotgun that fires specialized ammunition crafted
+                            from Nichirin steel and a Nichirin wakizashi. He is the younger brother of the Wind Hashira,
+                            Sanemi Shinazugawa. Genya is mortally wounded during the battle against the Upper Rank demon
+                            Kokushibo, reconciling with his brother before his death.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <h2>Demon Slayer Corps</h2>
+            <p>
+                The Demon Slayer Corps (鬼殺隊, Kisatsutai) are an organization that has existed since ancient times and is
+                dedicated to protect humankind from demons. There are hundreds of Demon Slayers within the organization,
+                but they act in secrecy, even from the Japanese government. The most powerful swordsmen among the Demon
+                Slayers are the Hashira (柱; lit. Pillars), who serve as its elite warriors.
+
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Ubuyashiki family</h2>
+            <div class="character-grid">
+                <!-- Kagaya -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Kagaya Ubuyashiki">
+                    <div class="card-content">
+                        <h3>Kagaya Ubuyashiki</h3>
+                        <p>
+                            The 97th leader of the Demon Slayer Corps, whose family established the organization. He is
+                            a distant relative of Muzan, resulting in his bloodline being cursed with a disease that
+                            slowly kills them before reaching their thirties due to their connection with Muzan's blood.
+                            He is gentle but firm and has dedicated himself to leading the Corps, garnering the respect
+                            of the Demon Slayers he commands. He sacrifices himself to weaken Muzan with a suicide
+                            bombing, exploiting Muzan's sadistic pleasure in listening to his last words before
+                            supposedly killing him.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Amane -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Amane Ubuyashiki">
+                    <div class="card-content">
+                        <h3>Amane Ubuyashiki</h3>
+                        <p>
+                            Kagaya's wife and caretaker, who later takes his place during meetings with the Hashira when
+                            he cannot attend. She was chosen by a priest to marry Kagaya and agreed to care for him on
+                            her own accord. She also assists in leading the Corps and was responsible for rescuing and
+                            recruiting the Mist Hashira, Muichiro Tokito. She dies in the explosion of the Ubuyashiki
+                            estate due to staying with her husband.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zenitsu -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Zenitsu Agatsuma">
+                    <div class="card-content">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>
+                            A cowardly yet powerful Demon Slayer who masters the first form of Thunder Breathing. His
+                            lightning-fast strikes are unleashed when unconscious, showing his hidden strength.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zenitsu -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Zenitsu Agatsuma">
+                    <div class="card-content">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>
+                            A cowardly yet powerful Demon Slayer who masters the first form of Thunder Breathing. His
+                            lightning-fast strikes are unleashed when unconscious, showing his hidden strength.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zenitsu -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Zenitsu Agatsuma">
+                    <div class="card-content">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>
+                            A cowardly yet powerful Demon Slayer who masters the first form of Thunder Breathing. His
+                            lightning-fast strikes are unleashed when unconscious, showing his hidden strength.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zenitsu -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Zenitsu Agatsuma">
+                    <div class="card-content">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>
+                            A cowardly yet powerful Demon Slayer who masters the first form of Thunder Breathing. His
+                            lightning-fast strikes are unleashed when unconscious, showing his hidden strength.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Zenitsu -->
+                <div class="card">
+                    <img src="Zenitsu.jpg" alt="Zenitsu Agatsuma">
+                    <div class="card-content">
+                        <h3>Zenitsu Agatsuma</h3>
+                        <p>
+                            A cowardly yet powerful Demon Slayer who masters the first form of Thunder Breathing. His
+                            lightning-fast strikes are unleashed when unconscious, showing his hidden strength.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Hashira</h2>
+            <div class="character-grid">
+                <!-- Gyomei -->
+                <div class="card">
+                    <img src="Gyomei.webp" alt="Gyomei Himejima">
+                    <div class="card-content">
+                        <h3>Gyomei Himejima</h3>
+                        <p>
+                            The Stone Hashira, regarded as the most powerful combatant in the Demon Slayer Corps. A
+                            former monk, he was falsely imprisoned after children under his care were killed by a demon,
+                            leading him to be distrustful and cynical. He initially distrusts Tanjiro Kamado due to his
+                            sister's demon nature but later acknowledges his integrity. He wields a massive kusarigama
+                            instead of a standard Nichirin sword. Gyomei plays a critical role in the battles against
+                            the Upper Rank demon Kokushibo and Muzan Kibutsuji, during which he loses a leg. He succumbs
+                            to his injuries after Muzan's defeat.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Muichiro -->
+                <div class="card">
+                    <img src="Muichiro.jpg" alt="Muichiro Tokito">
+                    <div class="card-content">
+                        <h3>Muichiro Tokito</h3>
+                        <p>
+                            The Mist Hashira, an aloof yet secretly caring figure. A descendant of Demon Slayers of the
+                            past, he was orphaned as a child with only his older twin brother Yuichiro as family. After
+                            Yuichiro was killed protecting him from a demon, he suffers survivor's guilt, becoming an
+                            amnesiac and losing his childhood memories. He is initially distrustful of Tanjiro, but
+                            becomes much more friendly to him after regaining his memories and coming in terms with his
+                            survival. During the attack on the Swordsmith Village, he defeats Gyokko. Muichiro is killed
+                            in action against Kokushibo, who is revealed to be his distant ancestor. In the Reiwa era,
+                            he and his brother are reincarnated as infant twins.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Mitsuri -->
+                <div class="card">
+                    <img src="Mitsuri.jpeg" alt="Mitsuri Kanroji">
+                    <div class="card-content">
+                        <h3>Mitsuri Kanroji</h3>
+                        <p>
+                            The Love Hashira and a former disciple of Kyojuro Rengoku, who is passionate and somewhat
+                            airheaded. Unlike her fellow Demon Slayers, she did not join the Corps due to tragedies
+                            caused by demons, rather doing so in a way to be herself instead of conforming to society
+                            and marrying. She possesses enhanced flexibility and physical strength because of her dense
+                            musculature, and wields a whip-like Nichirin sword. She has an interest in cooking, able to
+                            make pancakes which are unseen in the Taishō era. She is pivotal in the defeat of Hantengu
+                            at Swordsmith Village and later battles his successor Nakime alongside Obanai. During the
+                            final battle against Muzan, she is mortally wounded and declares her love for Obanai, dying
+                            alongside him. In the Reiwa Era, they are reincarnated as a married couple who work as
+                            restaurateurs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kyojuro -->
+                <div class="card">
+                    <img src="Rengoku.webp" alt="Kyojuro Rengoku">
+                    <div class="card-content">
+                        <h3>Kyojuro Rengoku</h3>
+                        <p>
+                            The Flame Hashira and successor to his father Shinjuro. Though he comes off as boisterous
+                            and eccentric, he is pure-hearted and honorable, as his mother instilled in him a moral code
+                            of protecting the weak. He is assigned to investigate the Mugen Train, with Tanjiro,
+                            Zenitsu, Inosuke, and Nezuko aiding him in dispatching Enmu. After the battle, Akaza
+                            confronts him and proposes that he turn into a demon, having recognized his skill and
+                            strength. Kyojuro rejects this and battles him, but is ultimately killed. In his last
+                            moments, he directs Tanjiro to Shinjuro on his quest to discover more about Hinokami Kagura.
+                            Tanjiro later has the tsuba of Kyojuro's sword installed into his new sword to honor him. In
+                            the present day, he is reincarnated as a high school student named Tojuro, who is also his
+                            descendant through his younger brother.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Giyu -->
+                <div class="card">
+                    <img src="Giyu.webp" alt="Giyu Tomioka">
+                    <div class="card-content">
+                        <h3>Giyu Tomioka</h3>
+                        <p>
+                            The Water Hashira and the first Demon Slayer that Tanjiro meets. He initially tries to kill
+                            Nezuko but reconsiders after she protects Tanjiro from him, and directs them to his mentor
+                            Sakonji Urokodaki in hopes that Tanjiro could succeed him and possibly cure Nezuko. Beneath
+                            his aloof and unemotional exterior, he suffers from an inferiority complex stemming from
+                            survivor's guilt during Final Selection, where his best friend Sabito dies after killing all
+                            but one demon, leading him to be unconfident in his skills as a Hashira. He developed an
+                            additional self-taught form of Water Breathing. Giyu and Tanjiro battle Akaza in the
+                            Infinity Castle, and later are the first to face Muzan. He loses his left arm during the
+                            battle, but survives. Giyu has a descendent in the present day named Giichi, who is close
+                            friends with Sabito and Makomo's reincarnations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Shinobu -->
+                <div class="card">
+                    <img src="shinobu.webp" alt="Shinobu Kocho">
+                    <div class="card-content">
+                        <h3>Shinobu Kocho</h3>
+                        <p>
+                            The Insect Hashira and sister of Kanae. Her surname, Kochō (胡蝶), means "butterfly", hence
+                            her motif. She is seemingly cool-headed and optimistic and enjoys teasing others,
+                            particularly Giyu, but beneath her cheerful façade is a constantly angry and vengeful figure
+                            motivated solely by her hatred of demons, who killed her family one after another, to the
+                            point of deriving sadistic pleasure from killing demons. However, she is caring towards
+                            humans, including her subordinates, Tsuyuri Kanao and the Kamados after Nezuko was allowed
+                            to stay. Due to her small frame preventing her from traditionally beheading demons, she
+                            wields a thin, sting-like Nichirin sword to inject them with a wisteria-based poison she
+                            made. This expertise allows her to assist Tamayo in developing the cure for Nezuko and in
+                            concocting a mixture of drugs to weaken Muzan, working with her despite her initial hatred
+                            for Tamayo's demon status. Shinobu sacrifices herself to defeat Doma, having previously
+                            taken massive doses of wisteria to ensure he would be poisoned when he devoured her,
+                            allowing Kanao and Inosuke to kill him. In the present day, she and Kanae are reincarnated
+                            as high school students.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tengen -->
+                <div class="card">
+                    <img src="Tengen.png" alt="Tengen Uzui">
+                    <div class="card-content">
+                        <h3>Tengen Uzui</h3>
+                        <p>
+                            The Sound Hashira and a former shinobi. He is exuberant and prideful, always striving to do
+                            things in a flamboyant manner. Despite being arrogant and condescending towards others, he
+                            harbors deep regrets over his former life as a shinobi, including being forced to kill his
+                            siblings on his father's orders; he joined the Demon Slayers to atone for his sins and
+                            regrets. He has three wives who served as kunoichi and assist him in his mission. He retires
+                            as the Sound Hashira after losing his left hand and eye while fighting Gyutaro. He later
+                            assists in the final battle against Muzan, protecting Kiriya alongside Shinjuro. In the
+                            Reiwa Era, Tengen has a descendant named Tenma, who is an Olympic gymnast and acts in a
+                            similarly arrogant manner towards others.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sanemi -->
+                <div class="card">
+                    <img src="sanemi.jpg" alt="Sanemi Shinazugawa">
+                    <div class="card-content">
+                        <h3>Sanemi Shinazugawa</h3>
+                        <p>
+                            The Wind Hashira, who is confrontational and aggressive; even after failing in his attempt
+                            to prove Nezuko's demonic nature to the Hashira and Kagaya, he does not accept the Kamado
+                            siblings. As a teen, he witnessed the deaths of his siblings and was forced to kill his
+                            mother, who had been transformed into a demon. He is the older brother of Genya, his only
+                            surviving sibling, and continually shuns him to unsuccessfully have his brother quit the
+                            Demon Slayer Corps so he can live a normal life. Along with Giyu, he is one of two Hashira
+                            to survive the final battle against the Upper Ranks and Muzan, but loses two right fingers
+                            during his battle against Kokushibo. In the present day, he has a descendant who is a police
+                            officer along with Genya's reincarnation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Obanai -->
+                <div class="card">
+                    <img src="Obanai.jpg" alt="Obanai Iguro">
+                    <div class="card-content">
+                        <h3>Obanai Iguro</h3>
+                        <p>
+                            The Serpent Hashira, who is accompanied by his companion snake, Kaburamaru. He is toxic and
+                            ruthless towards others, suffering from deep self-loathing because of his past. His family,
+                            an all-female clan of bandits, raised him to be an offering to a serpentine demon they
+                            worshipped simply for being the first male in their lineage in years, when Shinjuro Rengoku
+                            rescued him. He joined the Demon Slayer Corps as a means to vent his rage at his family
+                            being destroyed through their association with the demon. He is in love with Mitsuri, being
+                            unusually open and relaxed in her presence, and is jealous when she apparently becomes close
+                            to others. During the final battle, he and Mitsuri battle Nakime before joining the fight
+                            against Muzan, in which he and Kaburamaru provide assistance. After the battle, he declares
+                            his love for Mitsuri and dies alongside her from his sustained wounds, with Kaburamaru's
+                            care being entrusted to Kanao. In the present day, he and Mitsuri's reincarnations are
+                            happily married and run a restaurant together.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Butterfly Mansion</h2>
+            <div class="character-grid">
+                <!-- Aoi -->
+                <div class="card">
+                    <img src="Aoi.avif" alt="Aoi Kanzaki">
+                    <div class="card-content">
+                        <h3>Aoi Kanzaki</h3>
+                        <p>
+                            One of Shinobu's adoptive sisters. Despite surviving the Final Selection to become a Demon
+                            Slayer, she is too afraid to fight on the frontlines and instead oversees the rehabilitation
+                            of wounded Demon Slayers who are treated at the Butterfly Mansion. She eventually co-owns
+                            the Butterfly Mansion after Shinobu's death and marries Inosuke, having two
+                            great-grandchildren.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Goto -->
+                <div class="card">
+                    <img src="Goto.jpg" alt="Goto">
+                    <div class="card-content">
+                        <h3>Goto</h3>
+                        <p>
+                            A generic member of the Kakushi, the cleanup brigade of the Demon Slayers. After the mission
+                            to Natagumo Mountain, he brings Tanjiro before the Hashira to be put on trial. By sheer
+                            coincidence, he is always sent to recover Tanjiro when he is injured to the point they
+                            become well acquainted. He has a descendant in the present day who admires Yushiro's
+                            paintings of Tamayo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sumi, Naho, Kiyo -->
+                <div class="card">
+                    <img src="suminakahara.webp" alt="Sumi Nakahara, Naho Takada, Kiyo Terauchi">
+                    <div class="card-content">
+                        <h3>Sumi Nakahara, Naho Takada, Kiyo Terauchi</h3>
+                        <p>
+                            One of Shinobu's adoptive sisters. Despite surviving the Final Selection to become a Demon
+                            Slayer, she is too afraid to fight on the frontlines and instead oversees the rehabilitation
+                            of wounded Demon Slayers who are treated at the Butterfly Mansion. She eventually co-owns
+                            the Butterfly Mansion after Shinobu's death and marries Inosuke, having two
+                            great-grandchildren.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kanae -->
+                <div class="card">
+                    <img src="Kanae.jpg" alt="Kanae Kocho">
+                    <div class="card-content">
+                        <h3>Kanae Kocho</h3>
+                        <p>
+                            One of Shinobu's adoptive sisters. Despite surviving the Final Selection to become a Demon
+                            Slayer, she is too afraid to fight on the frontlines and instead oversees the rehabilitation
+                            of wounded Demon Slayers who are treated at the Butterfly Mansion. She eventually co-owns
+                            the Butterfly Mansion after Shinobu's death and marries Inosuke, having two
+                            great-grandchildren.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Swordsmith Village</h2>
+            <div class="character-grid">
+                <!-- Hotaru -->
+                <div class="card">
+                    <img src="haganezukas.webp" alt="Hotaru Haganezuka">
+                    <div class="card-content">
+                        <h3>Hotaru Haganezuka</h3>
+                        <p>
+                            One of the swordsmiths who makes swords for the Demon Slayer Corps, and is assigned to forge
+                            Tanjiro's sword. He is an extremely aggressive figure who is extremely dedicated to his work
+                            to a fault, angered whenever Tanjiro breaks or loses his sword, only calming down when he is
+                            given dango. After Tanjiro's numerous swords breaking from demon attacks, he realizes his
+                            mistakes and weaknesses in his blades, motivating him to improve his physical ability in a
+                            nearby forest in order to improve his craftsmanship. He polished Yoriichi Tsugikini's sword
+                            for Tanjiro, who used it to defeat Muzan. He has a descendant in the present day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kozo -->
+                <div class="card">
+                    <img src="Kanamori.webp" alt="Kozo Kanamori">
+                    <div class="card-content">
+                        <h3>Kozo Kanamori</h3>
+                        <p>
+                            A swordsmith who makes swords for the Demon Slayer Corps, who made Inosuke's blades and is
+                            later assigned to make Muichiro Tokito's blade. Despite being less aggressive than Hotaru,
+                            he is also angered at Inosuke purposely chipping his swords. He is nearly killed during
+                            Gyokko's attack on the Swordsmith Village, but Muichiro saves him. He has a descendant in
+                            the present day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Kotetsu -->
+                <div class="card">
+                    <img src="Kotetsu.webp" alt="Kotetsu">
+                    <div class="card-content">
+                        <h3>Kotetsu</h3>
+                        <p>
+                            A 10-year-old-boy who inherited his family's mechanical doll, which was made in reference to
+                            Yoriichi. He is injured by one of Gyokko's demons during the attack on the Swordsmith
+                            Village, but Muichiro saves him. Unlike other Swordsmith Village inhabitants, his face is
+                            comically alike with the mask he wears, in comparison to the villagers' fair apperance. He
+                            has a descendant in the present day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tecchin -->
+                <div class="card">
+                    <img src="Tecchin_Tecchikawahara.webp" alt="Tecchin Tecchikawahara">
+                    <div class="card-content">
+                        <h3>Tecchin Tecchikawahara</h3>
+                        <p>
+                            The mild-mannered elderly chief of the swordsmith village and a master blacksmith. He raised
+                            Hotaru from childhood due to his extremely troublesome nature.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tetsuido -->
+                <div class="card">
+                    <img src="Tetsuido.webp" alt="Tetsuido">
+                    <div class="card-content">
+                        <h3>Tetsuido</h3>
+                        <p>
+                            A caring old swordsmith who used to forge Muichiro's blades before dying.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Demon Slayer Fanpage | Made with ❤️ by an Anime Enthusiast
+    </footer>
+</body>
+
+</html>
